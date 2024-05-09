@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import java.util.Locale;
 public class RequestController {
 
     @RequestMapping("/heards")
-    public String heards(
+    public ResponseEntity<?> heards(
             HttpServletRequest request,
             HttpServletResponse response,
             HttpMethod httpMethod,
@@ -34,6 +35,7 @@ public class RequestController {
         log.info("header host={}", host);
         log.info("myCookie={}", cookie);
 
-        return "OK";
+        return ResponseEntity.accepted().body("ok");
     }
+
 }

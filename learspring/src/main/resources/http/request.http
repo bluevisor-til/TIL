@@ -20,3 +20,21 @@ content-type: application/json
 
 ### 요청 - 기본, 헤더 조회
 GET http://localhost:8080/heards
+
+### 요청 - 쿼리 파라미터
+GET http://localhost:8080/requestParam-v1?username=hello&age=20
+
+### 요청 - 파라미터
+GET http://localhost:8080/requestParam-v2?username=hello&age=20
+
+### 요청 - 파라미터
+GET http://localhost:8080/requestParam-v3?username=hello&age=20
+
+### 요청 - 파라미터
+GET http://localhost:8080/requestParam-v4?username=hello&age=20
+
+### 요청 - modelAttribute
+GET http://localhost:8080/model-attribute-v1?username=hello&age=20
+
+### 요청 - modelAttribute (v2)
+GET http://localhost:8080/model-attribute-v2?username=hello&age=20
