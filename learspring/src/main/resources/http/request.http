@@ -1,0 +1,22 @@
+### API Mapping TEST - GET 테스트
+GET http://localhost:8080/mapping/users
+content-type: application/json
+
+### POST 맵핑
+POST http://localhost:8080/mapping/users
+content-type: application/json
+
+### 동적 맵핑
+GET http://localhost:8080/mapping/users/1
+content-type: application/json
+
+### PATCH 맵핑
+PATCH http://localhost:8080/mapping/users/2
+content-type: application/json
+
+### 삭제 맵핑
+DELETE http://localhost:8080/mapping/users/2
+content-type: application/json
+
+### 요청 - 기본, 헤더 조회
+GET http://localhost:8080/heards
